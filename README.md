@@ -9,15 +9,21 @@ This project focuses on creating a web application of Black Jack using Spring bo
 ## Content
 * [Intro](#BlackJackAppSpringBoot)
 * [Architecture](#Architecture)
-    * [Micro Service Architecture](#)
-    * [React Service]()
-    * [Spring Boot Service()
+    * [Micro Service Architecture](#Micro-Service-Architecture)
+    * [React Service](#React-Service)
+    * [Spring Boot Service(#Spring-Boot-Service)
 * [Development Environment](#Development-Environment)
-    *[Architecture]()
+    * [Architecture]()
+    * [Spring Boot Server Setup] (#Spring Boot Server Setup)
     
 
 ## Architecture
 
+### Micro Service Architecture
+
+### React Service
+
+### Spring Boot Service
 
 ## Development Environment
 
