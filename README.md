@@ -11,10 +11,12 @@ This project focuses on creating a web application of Black Jack using Spring bo
 * [Architecture](#Architecture)
     * [Micro Service Architecture](#Micro-Service-Architecture)
     * [React Service](#React-Service)
-    * [Spring Boot Service(#Spring-Boot-Service)
+    * [Spring Boot Service](#Spring-Boot-Service)
 * [Development Environment](#Development-Environment)
-    * [Architecture]()
-    * [Spring Boot Server Setup] (#Spring Boot Server Setup)
+    * [Architecture](#Development-Architecture)
+    * [React Server Setup](#React-Server-Setup)
+    * [Spring Boot Server Setup] (#Spring-Boot-Server-Setup)
+
     
 
 ## Architecture
@@ -27,15 +29,7 @@ This project focuses on creating a web application of Black Jack using Spring bo
 
 ## Development Environment
 
-### Spring Boot Server Setup
-
-   1. Open command prompt 
-   2. Navigate to the project folder 
-   3. Run the following code:
-    
-     mvn spring-boot: run 
-
-This should run the server for Spring Boot getting accessed by localhost:8080 
+### Development Architecture
 
 ### React Server Setup
 
@@ -46,6 +40,16 @@ This should run the server for Spring Boot getting accessed by localhost:8080
      npm start
      
 This should run the server for React App getting accessed by localhost:3000     
+### Spring Boot Server Setup
+
+   1. Open command prompt 
+   2. Navigate to the project folder 
+   3. Run the following code:
+    
+     mvn spring-boot: run 
+
+This should run the server for Spring Boot getting accessed by localhost:8080 
+
      
 ## Tools
 * Windows 10 as operating System 
