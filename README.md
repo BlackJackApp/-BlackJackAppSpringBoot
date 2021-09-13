@@ -25,8 +25,18 @@ This project focuses on creating a web application of Black Jack using Spring bo
 ### Micro Service Architecture
 
 ### React Service Setup
+1. Go to command line of Windows
+2. Type the following command:
+
+npm create-react-app BlackjackAppReact
+
+This creates the standard React Service
 
 ### Spring Boot Service Setup
+
+1. Go to https://start.spring.io/
+2. Name the Artifact and give it a suitable name
+3. Generate the Folder
 
 
 ## Development Environment
