@@ -77,3 +77,22 @@ This should run the server for Spring Boot getting accessed by localhost:8080
 * Jenkins - Open-source CI/CD pipeline builder. Very flexible in its implementation. 
 
 ## Continuous Integration 
+
+## Risk Assessment
+SWOT Analysis:
+
+Risk assessment:
+1) Eye strain
+2) Posture issues/ Back strain
+3) Too focussed on development rather than testing
+4) Poor time management
+5) Plugin issues
+6) Missing deadlines
+7) Scope Creep
+8) Unclear Requirements
+9) Poor communication
+10) Working from home distraction
+11) Lack of training with given software
+12) Hardware breaking down 
+
+![img.png](img.png)
