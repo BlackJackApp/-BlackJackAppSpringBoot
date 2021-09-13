@@ -10,12 +10,13 @@ This project focuses on creating a web application of Black Jack using Spring bo
 * [Intro](#BlackJackAppSpringBoot)
 * [Architecture](#Architecture)
     * [Micro Service Architecture](#Micro-Service-Architecture)
-    * [React Service](#React-Service)
-    * [Spring Boot Service](#Spring-Boot-Service)
+    * [React Service](#React-Service-Setup)
+    * [Spring Boot Service](#Spring-Boot-Service-Setup)
 * [Development Environment](#Development-Environment)
     * [Architecture](#Development-Architecture)
+    * [Kanban Board](#Kanban-Board)
     * [React Server Setup](#React-Server-Setup)
-    * [Spring Boot Server Setup] (#Spring-Boot-Server-Setup)
+    * [Spring Boot Server Setup](#Spring-Boot-Server-Setup)
 
     
 
@@ -23,13 +24,18 @@ This project focuses on creating a web application of Black Jack using Spring bo
 
 ### Micro Service Architecture
 
-### React Service
+### React Service Setup
 
-### Spring Boot Service
+### Spring Boot Service Setup
+
 
 ## Development Environment
 
 ### Development Architecture
+
+### Kanban Board
+Jira is being used for Kanban Board to visualise the work to be done: 
+
 
 ### React Server Setup
 
@@ -70,4 +76,4 @@ This should run the server for Spring Boot getting accessed by localhost:8080
 * Selenium 3.141.59 for testing web application- Integration Testing for both Microservices. 
 * Jenkins - Open-source CI/CD pipeline builder. Very flexible in its implementation. 
 
-
+## Continuous Integration 
