@@ -1,0 +1,166 @@
+@startuml
+
+/' diagram meta data start
+config=CallConfiguration;
+{
+  "rootMethod": "com.example.Blackjackapp.BlackJackApplication#newResponse()",
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": ""
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": true,
+    "cutInterfaceStructures": true,
+    "cutDataStructures": true,
+    "cutGetterAndSetter": true,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 3,
+    "backwardDepth": 3,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false // root node is included
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showMethodParametersTypes": false,
+    "showMethodParametersNames": false,
+    "showMethodReturnType": false,
+    "showPackageLevels": 2,
+    "showCallOrder": false,
+    "edgeMode": "MethodsOnly", // TypesOnly, MethodsOnly, TypesAndMethods, MethodsAndDirectTypeUsage
+    "showDetailedClassStructure": false
+  },
+  "rootClass": "com.example.Blackjackapp.BlackJackApplication"
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="LR"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_1322970774 { 
+   	label=example
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   subgraph cluster_554721497 { 
+   	label=Blackjackapp
+	labeljust=l
+	fillcolor="#d8d8d8"
+	style=filled
+   
+   subgraph cluster_1642535500 { 
+   	label=BlackJackApplication
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   BlackJackApplication158852468XXXnewResponse0[
+	label="+ newResponse()"
+	style=filled
+	fillcolor=white
+	tooltip="BlackJackApplication
+
+null"
+	penwidth=4
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_1845944225 { 
+   	label=Shuffle
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   Shuffle158852468XXXshuffle104431[
+	label="+ shuffle()"
+	style=filled
+	fillcolor=white
+	tooltip="Shuffle
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_683012861 { 
+   	label=Deck
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   Deck158852468XXXaddExtraDeck0[
+	label="+ addExtraDeck()"
+	style=filled
+	fillcolor=white
+	tooltip="Deck
+
+null"
+	fontcolor=darkgreen
+];
+
+Deck158852468XXXshuffle0[
+	label="+ shuffle()"
+	style=filled
+	fillcolor=white
+	tooltip="Deck
+
+null"
+	fontcolor=darkgreen
+];
+} 
+} 
+} 
+
+'edges    
+BlackJackApplication158852468XXXnewResponse0 -> Shuffle158852468XXXshuffle104431;
+Shuffle158852468XXXshuffle104431 -> Deck158852468XXXaddExtraDeck0;
+Shuffle158852468XXXshuffle104431 -> Deck158852468XXXshuffle0;
+    
+}
+@enduml
