@@ -23,29 +23,36 @@ This project focuses on creating a web application of Black Jack using Spring bo
 ## Architecture
 
 ### Micro Service Architecture
-
+![Architecture](./READMEAssets/Architecture.jpg)
 ### React Service Setup
 1. Go to command line of Windows
 2. Type the following command:
 
-npm create-react-app BlackjackAppReact
+`   npm create-react-app BlackjackAppReact
+`
 
-This creates the standard React Service
+This creates the standard React Service named BlackjackAppReact
+
+3. Change directory to BlackjackAppReact in command line
+4. Type the following command:
+   `   npm install
+   `
+  This will install all the required dependencies for the project.
 
 ### Spring Boot Service Setup
 
 1. Go to https://start.spring.io/
 2. Name the Artifact and give it a suitable name
 3. Generate the Folder
-
-
+4. Open the folder in IntelliJ and add the dependencies from maven repository stated in [Tools](#Tools)
+5. Build the Project and start working on the classes for BlackJack
 ## Development Environment
 
 ### Development Architecture
 
 ### Kanban Board
 Jira is being used for Kanban Board to visualise the work to be done: 
-
+![Kanban board](./READMEAssets/Kanbanboard.JPG)
 
 ### React Server Setup
 
