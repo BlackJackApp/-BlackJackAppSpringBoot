@@ -7,7 +7,7 @@ Authors: Arkaan Quanunga, Sam King
 This project focuses on creating a web application of Black Jack using Spring boot. React is used for the presentation layer of this project.The project uses 8 decks and shuffles them at the start of the game.  
 
 ## Content
-* [Intro](#BlackJackAppSpringBoot)
+* [Introduction](#BlackJackAppSpringBoot)
 * [Architecture](#Architecture)
     * [Micro Service Architecture](#Micro-Service-Architecture)
     * [React Service](#React-Service-Setup)
@@ -17,14 +17,23 @@ This project focuses on creating a web application of Black Jack using Spring bo
     * [Kanban Board](#Kanban-Board)
     * [React Server Setup](#React-Server-Setup)
     * [Spring Boot Server Setup](#Spring-Boot-Server-Setup)
+* [Tools](#Tools)
+* [Continuous Integration](#Continuous-Integration)
+* [Testing](#Testing)
+* [Future Improvements](#Future-Improvements)
+* [References](#References)
 
     
 
 ## Architecture
 
 ### Micro Service Architecture
+
+
 ![Architecture](./READMEAssets/Architecture.jpg)
+
 ### React Service Setup
+
 1. Go to command line of Windows
 2. Type the following command:
 
@@ -113,3 +122,18 @@ Risk assessment:
 12) Hardware breaking down 
 
 ![img_1.png](./READMEAssets/img_1.png)
+
+## Testing
+
+Refer to [Test Plan](Test_Plan.docx) for detailed view.
+
+## Future Improvements
+
+This is the best app there is for blackjack you can't improve it.
+
+## References
+
+https://github.com/arkaan27/BlackJack4.0
+
+https://github.com/GarethDavisDWG/Blackjack
+
