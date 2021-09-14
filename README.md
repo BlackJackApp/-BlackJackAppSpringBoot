@@ -105,4 +105,4 @@ Risk assessment:
 11) Lack of training with given software
 12) Hardware breaking down 
 
-![img_1.png](img_1.png)
+![img_1.png](./READMEAssets/img_1.png)
