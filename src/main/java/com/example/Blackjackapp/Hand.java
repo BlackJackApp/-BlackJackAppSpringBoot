@@ -37,7 +37,7 @@ public class Hand {
         }
         values.add(score);
         if(isAce){
-            values.add(score+11);
+            values.add(score+10);
         }
         return values;
     }

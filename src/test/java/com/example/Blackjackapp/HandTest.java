@@ -32,12 +32,37 @@ public class HandTest {
     }
 
     @Test
-    @DisplayName("set hand")
-    public void setHandTest() {
-        Hand handA = new Hand(); Card cardA = new Card(Suit.SPADES, Value.ACE);
-        Hand handB = new Hand(); Card cardB = new Card(Suit.SPADES, Value.JACK);
-        ArrayList<Card> cardArray = new ArrayList<Card>();
-        cardArray.add(cardA); cardArray.add(cardB);
-        assertEquals(handA, handB, "can add cards to hand");
+    @DisplayName("does the hand have the correct value")
+    public void assignValueTest(){
+        Hand hand = new Hand();
+        Card cardA = new Card(Suit.DIAMOND,Value.THREE);
+        Card cardB = new Card(Suit.CLUBS,Value.SIX);
+        hand.addCard(cardA); hand.addCard(cardB);
+        ArrayList actualValue = hand.currentValue();
+        ArrayList expectedValue = new ArrayList(); expectedValue.add(9);
+        assertEquals(expectedValue,actualValue,"can calculate the value of a given hand");
+    }
+
+    @Test
+    @DisplayName("does the hand have the correct value (ace)")
+    public void assignValueTestAce(){
+        Hand hand = new Hand();
+        Card cardA = new Card(Suit.DIAMOND,Value.ACE);
+        Card cardB = new Card(Suit.CLUBS,Value.SEVEN);
+        hand.addCard(cardA); hand.addCard(cardB);
+        ArrayList actualValue = hand.currentValue();
+        int expectedValue = 18;
+        assertEquals(expectedValue, actualValue.get(1),"can calculate the value of a given hand");
+    }
+
+    @Test
+    @DisplayName("display checks")
+    public void stringBuilderChecker(){
+        Hand hand = new Hand();
+        Card card = new Card(Suit.SPADES,Value.ACE);
+        hand.addCard(card);
+        String actualAnswer = hand.toString();
+        String expectedAnswer = "ACE of SPADES" + System.lineSeparator();
+        assertEquals(expectedAnswer,actualAnswer,"string builder works");
     }
 }
