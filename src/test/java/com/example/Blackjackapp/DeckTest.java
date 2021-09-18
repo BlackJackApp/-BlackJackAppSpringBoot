@@ -124,4 +124,5 @@ public class DeckTest {
         deckB.shuffle();
         assertNotEquals(deckA,deckB,"The decks are shuffled");
     }
+
 }

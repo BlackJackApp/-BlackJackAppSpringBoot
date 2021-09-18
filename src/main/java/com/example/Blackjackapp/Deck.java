@@ -22,7 +22,7 @@ public class Deck {
         }
     }
 
-    // Getters and setters
+        // Getters and setters
     public Stack<Card> getDeck() {
         return deck;
     }
