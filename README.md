@@ -4,7 +4,11 @@ Authors: Arkaan Quanunga, Sam King
 
 ## Summary
 
-This project focuses on creating a web application of Black Jack using Spring boot. React is used for the presentation layer of this project.The project uses 8 decks and shuffles them at the start of the game.  
+This project focuses on creating a web application of Black Jack using Spring boot. React is used for the presentation layer of this project.The project uses 8 decks and shuffles them at the start of the game. Player wins the game by having more points than Dealer. 
+
+See [Rules](#Rules) for additional information.
+
+Refer to [Software Requirement Specification](#Software_Requirement_Specification.docx) for detailed description of project.
 
 ## Content
 * [Introduction](#BlackJackAppSpringBoot)
@@ -29,7 +33,6 @@ This project focuses on creating a web application of Black Jack using Spring bo
 
 ### Micro Service Architecture
 
-
 ![Architecture](./READMEAssets/Architecture.jpg)
 
 ### React Service Setup
@@ -44,8 +47,10 @@ This creates the standard React Service named BlackjackAppReact
 
 3. Change directory to BlackjackAppReact in command line
 4. Type the following command:
+
    `   npm install
    `
+
   This will install all the required dependencies for the project.
 
 ### Spring Boot Service Setup
@@ -61,10 +66,9 @@ This creates the standard React Service named BlackjackAppReact
 
 ### Kanban Board
 Jira is being used for Kanban Board to visualise the work to be done: 
-<<<<<<< HEAD
-=======
+
 ![Kanban board](./READMEAssets/Kanbanboard.JPG)
->>>>>>> 9f07033e43687e0fc2de290e95c82fef01084ca2
+
 
 ### React Server Setup
 
