@@ -60,11 +60,11 @@ This creates the standard React Service named BlackjackAppReact
 ### Development Architecture
 
 ### Kanban Board
+
 Jira is being used for Kanban Board to visualise the work to be done: 
-<<<<<<< HEAD
-=======
+
 ![Kanban board](./READMEAssets/Kanbanboard.JPG)
->>>>>>> 9f07033e43687e0fc2de290e95c82fef01084ca2
+
 
 ### React Server Setup
 
@@ -105,8 +105,10 @@ This should run the server for Spring Boot getting accessed by localhost:8080
 * Selenium 3.141.59 for testing web application- Integration Testing for both Microservices. 
 * Jenkins - Open-source CI/CD pipeline builder. Very flexible in its implementation. 
 
-## Continuous Integration 
+## Continuous Integration
+Jenkins is being used for Continuous Integration Process with Sonar Cloud
 
+Jenkins Setup
 ## Risk Assessment
 SWOT Analysis:
 
