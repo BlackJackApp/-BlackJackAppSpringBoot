@@ -15,8 +15,9 @@ public class BlackJackApplication {
 	}
 
 	@CrossOrigin("http://localhost:3000")
-	@GetMapping("getDeck")
+	@GetMapping("Initial State")
 	public String newResponse(){
-		return Shuffle.shuffle(3);
+		Player player = new Player();
+		return player.getName();
 	}
 }

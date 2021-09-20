@@ -56,7 +56,6 @@ public class Game {
     }
 
 
-
     public String gameToString() {
         StringBuilder sb = new StringBuilder();
         for (Player p : this.players) {
