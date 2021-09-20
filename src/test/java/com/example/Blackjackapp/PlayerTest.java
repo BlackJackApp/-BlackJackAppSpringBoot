@@ -48,6 +48,10 @@ public class PlayerTest {
     //    playerHand.add(cardA); playerHand.add(cardB);
     //    player.setHands(playerHand);
     //}
+    @Test
+    @DisplayName("Hand display")
+    void displayTest(){
 
+    }
 }
 
