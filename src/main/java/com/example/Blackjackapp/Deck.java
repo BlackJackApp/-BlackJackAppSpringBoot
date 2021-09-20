@@ -8,11 +8,11 @@ public class Deck {
     private Stack<Card> deck = new Stack();
 
     // Creates a public class to create a deck
-    public Deck() {this.deckInitializer();}
+    public Deck() {this.Initializer();}
 
     // Creates New Deck of Cards
 
-    private void deckInitializer(){
+    private void Initializer(){
         Suit currentSuit= Suit.SPADES;
         Value thisValue= Value.ACE;
         for(Suit cardSuit : Suit.values()) {

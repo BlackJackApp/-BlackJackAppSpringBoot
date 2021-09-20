@@ -7,7 +7,7 @@ public class CardTest {
 
     @Test
     @DisplayName("Card suit and value assignment")
-    public void baseCard(){
+    private void baseCard(){
         Card someCard = new Card(Suit.SPADES,Value.ACE);
         Suit cardSuit = Suit.SPADES;
         Value cardValue = Value.ACE;
@@ -17,7 +17,7 @@ public class CardTest {
 
     @Test
     @DisplayName("Getters and Setters")
-    public void forbiddenTest(){
+    private void forbiddenTest(){
         Card someCard = new Card(Suit.CLUBS,Value.FOUR);
         someCard.setSuit(Suit.DIAMOND);
         someCard.setValue(Value.EIGHT);

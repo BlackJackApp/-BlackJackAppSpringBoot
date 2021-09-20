@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class HandTest {
     @Test
     @DisplayName("add card to hand")
-    public void addCardTest(){
+    private void addCardTest(){
         Hand hand = new Hand();
         Card card = new Card(Suit.SPADES,Value.ACE);
         ArrayList<Card> cardArray = new ArrayList<Card>();
@@ -20,7 +20,7 @@ public class HandTest {
 
     @Test
     @DisplayName("remove card from hand")
-    public void removeCardTest(){
+    private void removeCardTest(){
         Hand hand = new Hand();
         Card cardA = new Card(Suit.SPADES,Value.ACE);
         Card cardB = new Card(Suit.SPADES,Value.JACK);
@@ -33,7 +33,7 @@ public class HandTest {
 
     @Test
     @DisplayName("does the hand have the correct value")
-    public void assignValueTest(){
+    private void assignValueTest(){
         Hand hand = new Hand();
         Card cardA = new Card(Suit.DIAMOND,Value.THREE);
         Card cardB = new Card(Suit.CLUBS,Value.SIX);
@@ -45,7 +45,7 @@ public class HandTest {
 
     @Test
     @DisplayName("does the hand have the correct value (ace)")
-    public void assignValueTestAce(){
+    private void assignValueTestAce(){
         Hand hand = new Hand();
         Card cardA = new Card(Suit.DIAMOND,Value.ACE);
         Card cardB = new Card(Suit.CLUBS,Value.SEVEN);
@@ -57,7 +57,7 @@ public class HandTest {
 
     @Test
     @DisplayName("display checks")
-    public void stringBuilderChecker(){
+    private void stringBuilderChecker(){
         Hand hand = new Hand();
         Card card = new Card(Suit.SPADES,Value.ACE);
         hand.addCard(card);
