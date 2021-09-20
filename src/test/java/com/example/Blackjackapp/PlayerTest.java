@@ -45,7 +45,6 @@ public class PlayerTest {
         Hand hand = new Hand();
         hand.addCard(cardA); hand.addCard(cardB);
         assertEquals("ACE of SPADES" + System.lineSeparator() + "QUEEN of HEARTS" + System.lineSeparator(), hand.toString(),"can display the current hand");
-        
     }
 }
 
