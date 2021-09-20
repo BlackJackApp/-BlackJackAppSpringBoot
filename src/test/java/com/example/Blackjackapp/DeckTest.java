@@ -128,15 +128,16 @@ public class DeckTest {
     @Test
     @DisplayName("deck number stress test")
     void manyDeckStressTest(){
+        int limit = 712996;
         Deck deck = new Deck();
-        for(int i = 0; i < 1000; i++){
+        for(int i = 0; i < limit; i++){
             deck.addExtraDeck();
         }
         Deck defaultDeck = new Deck();
-        for(int i = 0; i < 1000; i++){
+        for(int i = 0; i < limit; i++){
             deck.addExtraDeck();
         }
         deck.shuffle();
-        assertNotEquals(defaultDeck,deck,"The system can handle 52000 cards");
+        assertNotEquals(defaultDeck,deck,"The system can handle a mass of cards");
     }
 }
