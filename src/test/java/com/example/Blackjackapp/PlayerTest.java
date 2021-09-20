@@ -36,8 +36,6 @@ public class PlayerTest {
     //    assertSame(false,playerBettingVerification,"You need more money than your current bet");
     //}
 
-
-<<<<<<< HEAD
     @Test
     @DisplayName("Hand display")
     void displayTest(){
@@ -47,23 +45,7 @@ public class PlayerTest {
         Hand hand = new Hand();
         hand.addCard(cardA); hand.addCard(cardB);
         assertEquals("ACE of SPADES" + System.lineSeparator() + "QUEEN of HEARTS" + System.lineSeparator(), hand.toString(),"can display the current hand");
-=======
-    //@Test
-    //@DisplayName("Hand display")
-    //public void displayTest(){
-    //    Player player = new Player();
-    //    ArrayList<Card> playerHand = new ArrayList<>();
-    //    Card cardA = new Card(Suit.SPADES,Value.ACE);
-    //    Card cardB = new Card(Suit.HEARTS,Value.QUEEN);
-    //    Hand hand = new Hand();
-    //    playerHand.add(cardA); playerHand.add(cardB);
-    //    player.setHands(playerHand);
-    //}
-    @Test
-    @DisplayName("Hand display")
-    void displayTest(){
-
->>>>>>> ce3c4cb6ca3c131e717f3a2ea26858106dc1c05f
+        
     }
 }
 
