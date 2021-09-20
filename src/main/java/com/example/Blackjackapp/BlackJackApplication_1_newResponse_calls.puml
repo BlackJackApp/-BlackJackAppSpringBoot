@@ -110,57 +110,11 @@ null"
 	fontcolor=darkgreen
 ];
 } 
-
-subgraph cluster_1845944225 { 
-   	label=Shuffle
-	labeljust=l
-	fillcolor=white
-	style=filled
-   
-   Shuffle158852468XXXshuffle104431[
-	label="+ shuffle()"
-	style=filled
-	fillcolor=white
-	tooltip="Shuffle
-
-null"
-	fontcolor=darkgreen
-];
-} 
-
-subgraph cluster_683012861 { 
-   	label=Deck
-	labeljust=l
-	fillcolor=white
-	style=filled
-   
-   Deck158852468XXXaddExtraDeck0[
-	label="+ addExtraDeck()"
-	style=filled
-	fillcolor=white
-	tooltip="Deck
-
-null"
-	fontcolor=darkgreen
-];
-
-Deck158852468XXXshuffle0[
-	label="+ shuffle()"
-	style=filled
-	fillcolor=white
-	tooltip="Deck
-
-null"
-	fontcolor=darkgreen
-];
-} 
 } 
 } 
 
 'edges    
-BlackJackApplication158852468XXXnewResponse0 -> Shuffle158852468XXXshuffle104431;
-Shuffle158852468XXXshuffle104431 -> Deck158852468XXXaddExtraDeck0;
-Shuffle158852468XXXshuffle104431 -> Deck158852468XXXshuffle0;
+
     
 }
 @enduml
