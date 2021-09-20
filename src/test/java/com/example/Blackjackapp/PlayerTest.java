@@ -10,21 +10,21 @@ public class PlayerTest {
 
     @Test
     @DisplayName("Define money")
-    void createMoneyTest(){
+    void createMoneyTest() {
         Player player = new Player();
         player.setMoney(101);
         int expectedMoney = 101;
-        assertEquals(expectedMoney,player.getMoney(),"Default money is correct");
+        assertEquals(expectedMoney, player.getMoney(), "Default money is correct");
     }
 
     @Test
     @DisplayName("Setting bets")
-    void placingBets(){
+    void placingBets() {
         Player player = new Player();
         player.setMoney(100);
         player.setPlayerBet(50);
         double expectedBet = 50;
-        assertEquals(expectedBet,player.getPlayerBet(),"can place a bet");
+        assertEquals(expectedBet, player.getPlayerBet(), "can place a bet");
     }
 
     //@Test
@@ -37,6 +37,7 @@ public class PlayerTest {
     //}
 
 
+<<<<<<< HEAD
     @Test
     @DisplayName("Hand display")
     void displayTest(){
@@ -46,5 +47,23 @@ public class PlayerTest {
         Hand hand = new Hand();
         hand.addCard(cardA); hand.addCard(cardB);
         assertEquals("ACE of SPADES" + System.lineSeparator() + "QUEEN of HEARTS" + System.lineSeparator(), hand.toString(),"can display the current hand");
+=======
+    //@Test
+    //@DisplayName("Hand display")
+    //public void displayTest(){
+    //    Player player = new Player();
+    //    ArrayList<Card> playerHand = new ArrayList<>();
+    //    Card cardA = new Card(Suit.SPADES,Value.ACE);
+    //    Card cardB = new Card(Suit.HEARTS,Value.QUEEN);
+    //    Hand hand = new Hand();
+    //    playerHand.add(cardA); playerHand.add(cardB);
+    //    player.setHands(playerHand);
+    //}
+    @Test
+    @DisplayName("Hand display")
+    void displayTest(){
+
+>>>>>>> ce3c4cb6ca3c131e717f3a2ea26858106dc1c05f
     }
 }
+
