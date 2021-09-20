@@ -1,6 +1,9 @@
 package com.example.Blackjackapp;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+
+import java.util.Stack;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ShuffleTest {
@@ -10,7 +13,7 @@ public class ShuffleTest {
     void basicShuffleTest(){
         Deck deck = new Deck();
         deck.addExtraDeck(); deck.addExtraDeck(); deck.addExtraDeck(); deck.addExtraDeck();
-        String expectedDeck = Shuffle.shuffle(5);
+        Stack expectedDeck = Shuffle.shuffle(5);
         String deckString = deck.toString();
         assertEquals(deckString,expectedDeck,"Shuffle function works");
     }
