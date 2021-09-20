@@ -8,5 +8,10 @@ public class PersonTest {
     @Test
     @DisplayName("Initialisation")
     public void dealerInit(){
+        Person person = new Person();
+        person.setName("someName");
+        String actualName = person.getName();
+        String expectedName = "someName";
+        assertSame(expectedName,actualName,"Can set a name");
     }
 }
