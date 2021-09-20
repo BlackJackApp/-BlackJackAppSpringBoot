@@ -10,21 +10,21 @@ public class PlayerTest {
 
     @Test
     @DisplayName("Define money")
-    void createMoneyTest(){
+    void createMoneyTest() {
         Player player = new Player();
         player.setMoney(101);
         int expectedMoney = 101;
-        assertEquals(expectedMoney,player.getMoney(),"Default money is correct");
+        assertEquals(expectedMoney, player.getMoney(), "Default money is correct");
     }
 
     @Test
     @DisplayName("Setting bets")
-    void placingBets(){
+    void placingBets() {
         Player player = new Player();
         player.setMoney(100);
         player.setPlayerBet(50);
         double expectedBet = 50;
-        assertEquals(expectedBet,player.getPlayerBet(),"can place a bet");
+        assertEquals(expectedBet, player.getPlayerBet(), "can place a bet");
     }
 
     //@Test
@@ -36,7 +36,7 @@ public class PlayerTest {
     //    assertSame(false,playerBettingVerification,"You need more money than your current bet");
     //}
 
-<<<<<<< HEAD
+
     //@Test
     //@DisplayName("Hand display")
     //public void displayTest(){
@@ -48,6 +48,6 @@ public class PlayerTest {
     //    playerHand.add(cardA); playerHand.add(cardB);
     //    player.setHands(playerHand);
     //}
-=======
->>>>>>> 69b23947b8159d03b0c65a89d55be1675c376a9c
+
 }
+
