@@ -19,7 +19,14 @@ public class GameTest {
     @Test
     @DisplayName("dealing cards to players")
     void dealingCards(){
-        Game game = new Game(1);
-        //deal(2);
+        Game game = new Game(2);
+        game.deal(2);
+        ArrayList<Player> players = game.getPlayers();
+        Player player = players.get(0);
+        ArrayList<Hand> hands = player.getHands();
+        Hand hand = hands.get(0);
+        int handSize = hands.size();
+        int expected = 2;
+        assertEquals(expected,handSize,"can deal cards");
     }
 }

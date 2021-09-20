@@ -12,7 +12,7 @@ public class ShuffleTest {
     void basicShuffleTest(){
         Deck deck = new Deck();
         deck.addExtraDeck(); deck.addExtraDeck();
-        Stack expectedDeck = Shuffle.shuffle(5);
+        Stack expectedDeck = Shuffle.shuffle(3);
         assertNotEquals(expectedDeck,Shuffle.shuffle(3),"Shuffle function works");
     }
 
