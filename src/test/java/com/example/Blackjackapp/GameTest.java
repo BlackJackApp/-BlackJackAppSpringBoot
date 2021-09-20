@@ -3,6 +3,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.ArrayList;
+import java.util.Stack;
 
 public class GameTest {
 
@@ -58,6 +59,10 @@ public class GameTest {
     @Test
     @DisplayName("Shuffle getters and setters")
     void forbiddenTest(){
-        
+        Game game = new Game(1);
+        Stack<Card> deck = Shuffle.shuffle(2);
+        game.setShuffledDecks(deck);
+        Stack<Card> actual = game.getShuffledDecks();
+        assertEquals(deck,actual,"getters and setters");
     }
 }
