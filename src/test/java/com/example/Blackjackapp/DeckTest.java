@@ -7,7 +7,7 @@ public class DeckTest {
 
     @Test
     @DisplayName("Deck Size to be 52")
-    private void deckSize(){
+    void deckSize(){
         Deck deck = new Deck();
         int max = 52;
         assertSame(max, deck.getDeck().size(), "This is to test a deck has 52 cards");
@@ -15,7 +15,7 @@ public class DeckTest {
 
     @Test
     @DisplayName("52 unique cards")
-    private void noDuplicatedSuits() {
+    void noDuplicatedSuits() {
         Deck deck = new Deck();
 
         int spadesCounter = 0; int heartsCounter = 0; int clubsCounter = 0; int diamondsCounter = 0;
@@ -40,7 +40,7 @@ public class DeckTest {
 
     @Test
     @DisplayName("52 unique cards")
-    private void noDuplicatedValues() {
+    void noDuplicatedValues() {
         Deck deck = new Deck();
 
         int aceCounter = 0; int twoCounter = 0; int threeCounter = 0; int fourCounter = 0; int fiveCounter = 0;
@@ -99,7 +99,7 @@ public class DeckTest {
 
     @Test
     @DisplayName("Deck adder")
-    private void deckAdder(){
+    void deckAdder(){
         Deck deck = new Deck();
         deck.addExtraDeck();
         int total = 104;
@@ -108,7 +108,7 @@ public class DeckTest {
 
     @Test
     @DisplayName("Card remover")
-    private void cardRemover(){
+    void cardRemover(){
         Deck deck = new Deck();
         deck.removeCardFromDeck(1);
         int total = 51;
@@ -117,7 +117,7 @@ public class DeckTest {
 
     @Test
     @DisplayName("Shuffler")
-    private void shuffleDeckTest(){
+    void shuffleDeckTest(){
         Deck deckA = new Deck();
         Deck deckB = new Deck();
         deckA.shuffle();

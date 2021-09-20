@@ -45,7 +45,7 @@ public class HandTest {
 
     @Test
     @DisplayName("does the hand have the correct value (ace)")
-    private void assignValueTestAce(){
+    void assignValueTestAce(){
         Hand hand = new Hand();
         Card cardA = new Card(Suit.DIAMOND,Value.ACE);
         Card cardB = new Card(Suit.CLUBS,Value.SEVEN);
@@ -57,7 +57,7 @@ public class HandTest {
 
     @Test
     @DisplayName("display checks")
-    private void stringBuilderChecker(){
+    void stringBuilderChecker(){
         Hand hand = new Hand();
         Card card = new Card(Suit.SPADES,Value.ACE);
         hand.addCard(card);

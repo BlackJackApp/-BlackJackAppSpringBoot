@@ -7,7 +7,7 @@ public class PlayerTest {
 
     @Test
     @DisplayName("Define money")
-    public void createMoneyTest(){
+    void createMoneyTest(){
         Player player = new Player();
         player.setMoney(101);
         int expectedMoney = 101;
@@ -16,7 +16,7 @@ public class PlayerTest {
 
     @Test
     @DisplayName("Setting bets")
-    public void placingBets(){
+    void placingBets(){
         Player player = new Player();
         player.setMoney(100);
         player.setPlayerBet(50);
@@ -35,7 +35,7 @@ public class PlayerTest {
 
     @Test
     @DisplayName("Hand display")
-    public void displayTest(){
+    void displayTest(){
         
     }
 }

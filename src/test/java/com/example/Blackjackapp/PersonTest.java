@@ -7,6 +7,6 @@ public class PersonTest {
 
     @Test
     @DisplayName("Initialisation")
-    private void dealerInit(){
+     void dealerInit(){
     }
 }
