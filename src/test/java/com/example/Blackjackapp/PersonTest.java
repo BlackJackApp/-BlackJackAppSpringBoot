@@ -7,7 +7,7 @@ public class PersonTest {
 
     @Test
     @DisplayName("Initialisation")
-    public void dealerInit(){
+    void dealerInit(){
         Person person = new Person();
         person.setName("someName");
         String actualName = person.getName();

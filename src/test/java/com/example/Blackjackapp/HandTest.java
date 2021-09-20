@@ -7,9 +7,10 @@ import java.util.ArrayList;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class HandTest {
+
     @Test
     @DisplayName("add card to hand")
-    private void addCardTest(){
+    void addCardTest(){
         Hand hand = new Hand();
         Card card = new Card(Suit.SPADES,Value.ACE);
         ArrayList<Card> cardArray = new ArrayList<Card>();
@@ -20,7 +21,7 @@ public class HandTest {
 
     @Test
     @DisplayName("remove card from hand")
-    private void removeCardTest(){
+    void removeCardTest(){
         Hand hand = new Hand();
         Card cardA = new Card(Suit.SPADES,Value.ACE);
         Card cardB = new Card(Suit.SPADES,Value.JACK);
@@ -33,7 +34,7 @@ public class HandTest {
 
     @Test
     @DisplayName("does the hand have the correct value")
-    private void assignValueTest(){
+    void assignValueTest(){
         Hand hand = new Hand();
         Card cardA = new Card(Suit.DIAMOND,Value.THREE);
         Card cardB = new Card(Suit.CLUBS,Value.SIX);
