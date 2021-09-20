@@ -29,25 +29,22 @@ public class PlayerTest {
 
     //@Test
     //@DisplayName("Can you place a bet larger than the value a player has access to?")
-    //public void placingBigBet(){
+    //void placingBigBet(){
     //    Player player = new Player();
     //    player.setMoney(100);
     //    player.setPlayerBet(150);
     //    assertSame(false,playerBettingVerification,"You need more money than your current bet");
     //}
 
-<<<<<<< HEAD
-    //@Test
-    //@DisplayName("Hand display")
-    //public void displayTest(){
-    //    Player player = new Player();
-    //    ArrayList<Card> playerHand = new ArrayList<>();
-    //    Card cardA = new Card(Suit.SPADES,Value.ACE);
-    //    Card cardB = new Card(Suit.HEARTS,Value.QUEEN);
-    //    Hand hand = new Hand();
-    //    playerHand.add(cardA); playerHand.add(cardB);
-    //    player.setHands(playerHand);
-    //}
-=======
->>>>>>> 69b23947b8159d03b0c65a89d55be1675c376a9c
+
+    @Test
+    @DisplayName("Hand display")
+    void displayTest(){
+        Player player = new Player();
+        Card cardA = new Card(Suit.SPADES,Value.ACE);
+        Card cardB = new Card(Suit.HEARTS,Value.QUEEN);
+        Hand hand = new Hand();
+        hand.addCard(cardA); hand.addCard(cardB);
+        assertEquals("ACE of SPADES" + System.lineSeparator() + "QUEEN of HEARTS" + System.lineSeparator(), hand.toString(),"can display the current hand");
+    }
 }
