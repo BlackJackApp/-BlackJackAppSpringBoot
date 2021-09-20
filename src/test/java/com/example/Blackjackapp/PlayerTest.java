@@ -1,6 +1,9 @@
 package com.example.Blackjackapp;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class PlayerTest {
@@ -33,9 +36,15 @@ public class PlayerTest {
     //    assertSame(false,playerBettingVerification,"You need more money than your current bet");
     //}
 
-    @Test
-    @DisplayName("Hand display")
-    public void displayTest(){
-        
-    }
+    //@Test
+    //@DisplayName("Hand display")
+    //public void displayTest(){
+    //    Player player = new Player();
+    //    ArrayList<Card> playerHand = new ArrayList<>();
+    //    Card cardA = new Card(Suit.SPADES,Value.ACE);
+    //    Card cardB = new Card(Suit.HEARTS,Value.QUEEN);
+    //    Hand hand = new Hand();
+    //    playerHand.add(cardA); playerHand.add(cardB);
+    //    player.setHands(playerHand);
+    //}
 }

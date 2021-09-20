@@ -125,4 +125,18 @@ public class DeckTest {
         assertNotEquals(deckA,deckB,"The decks are shuffled");
     }
 
+    @Test
+    @DisplayName("deck number stress test")
+    public void manyDeckStressTest(){
+        Deck deck = new Deck();
+        for(int i = 0; i < 1000; i++){
+            deck.addExtraDeck();
+        }
+        Deck defaultDeck = new Deck();
+        for(int i = 0; i < 1000; i++){
+            deck.addExtraDeck();
+        }
+        deck.shuffle();
+        assertNotEquals(defaultDeck,deck,"The system can handle 52000 cards");
+    }
 }
