@@ -113,7 +113,66 @@ This should run the server for Spring Boot getting accessed by localhost:8080
 ## Continuous Integration
 Jenkins is being used for Continuous Integration Process with Sonar Cloud
 
-Jenkins Setup
+### Jenkins Setup
+1. Open Amazon Web Services Account
+2. Set up security on Amazon Account by Multi-Factor Authentication(MFA)
+3. Go to EC2 Service on Amazon Web Service
+4. Set up a new EC2 instance for Linux Ubuntu 20.13 Server with x84 architecture
+5. The EC2 instance must have a security group with 8080 and 3000 TCP protocol open.
+6. Launch the instance and wait for 3-5 minutes
+7. Connect to the instance
+8. You will need to update the Linux System Server and Install Java
+9. Type the following commands:
+
+`   sudo apt-get update`
+
+`   sudo apt install default-jre`
+
+`   java -version `
+
+`sudo apt install default-jdk`
+
+`javac -version`
+
+10. To install jenkins follow the commands:
+
+
+`wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > \
+/etc/apt/sources.list.d/jenkins.list'`
+
+`sudo apt-get update`
+
+`sudo apt-get install jenkins
+`
+11. To run the Jenkins server, follow the commands:
+
+`sudo systemctl start jenkins`
+
+12. Open up a new tab and copy the IP public address from your instance to the address bar.
+
+    It should look like this: 37.167.37.154
+
+13. Add :8080 at the end.
+
+    The address bar should look like this: 37.167.37.154:8080
+
+14. Copy the path obtained from jenkins page
+15. Go back to the EC2 instance and type the following command:
+
+`    sudo cat /home/jenkins /var/lib/jenkins
+`
+
+16. Now copy and paste the key obtained from the code into the jenkins tab.
+17. Install the necessary updates and create your user.
+18. Jenkins is ready for use.
+
+
+** Disclaimer!!**
+
+** YOU WILL GET CHARGED FOR THIS INSTANCE**
+
+** DO AT YOUR OWN RISK**
 ## Risk Assessment
 SWOT Analysis:
 
