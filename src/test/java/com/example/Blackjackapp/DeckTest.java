@@ -127,7 +127,7 @@ public class DeckTest {
 
     @Test
     @DisplayName("deck number stress test")
-    public void manyDeckStressTest(){
+    void manyDeckStressTest(){
         Deck deck = new Deck();
         for(int i = 0; i < 1000; i++){
             deck.addExtraDeck();
