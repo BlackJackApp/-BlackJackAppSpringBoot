@@ -49,7 +49,7 @@ public class DeckTest {
 
         for(Card card: deck.getDeck()){
             if(card.getValue() == Value.ACE){
-               aceCounter++;
+                aceCounter++;
             }
             else if(card.getValue() == Value.TWO){
                 twoCounter++;
